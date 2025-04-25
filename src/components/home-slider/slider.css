@@ -1,0 +1,51 @@
+
+.wid{
+  
+    width: 100%;
+  
+  
+}
+
+.slider-img {
+    overflow: hidden;
+    height: 90vh;
+    opacity: 0.5;
+    background-color: #000;
+    object-fit: fill;
+}
+
+
+.cap {
+    padding-bottom: 200px;
+}
+
+.cap h5 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.cap p {
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .slider-img {
+
+    height: 30vh;
+    }
+
+
+.cap {
+    padding-bottom: 50px;
+}
+
+.cap h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cap p {
+    font-size: 15px;
+}
+}

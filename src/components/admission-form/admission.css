@@ -1,0 +1,51 @@
+
+.formContainer {
+    position: absolute;
+    margin-top: -350px;
+    padding: 0px 30px;
+    overflow: hidden;
+    width: 60%;
+    height: 70%;
+    background-color: #c89300;
+    transform: translate(35%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px black;;
+    
+}
+
+.modal-content {
+    animation-name: animateModal;
+    animation-duration: 0.5s;
+     background-color: #c89300;
+}
+
+.close-modal-icon {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    font-weight: bold;
+}
+
+.header{
+    display: inline;
+    background-color: #c89300;
+}
+
+
+.formContent{
+    padding-top: 5px;
+}
+
+
+@keyframes animateModal {
+    from {
+        top: -200px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+    
+}
