@@ -127,13 +127,19 @@ const Navbar = () => {
           <li>
             {user ? (
               <div className="flex">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg font-semibold">{user.trim()[0].toUpperCase()}</div>
-              <button
-                onClick={signInWithGoogle}
-                className="hover:bg-blue-700 px-6 text-white text-xl rounded py-1"
-              >
-                Logout
-              </button>
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg font-semibold">
+                  {user.displayName
+                    ? user.displayName.trim()[0].toUpperCase()
+                    : user.email
+                    ? user.email.trim()[0].toUpperCase()
+                    : "U"}
+                </div>
+                <button
+                  onClick={signInWithGoogle}
+                  className="hover:bg-blue-700 px-6 text-white text-xl rounded py-1"
+                >
+                  Logout
+                </button>
               </div>
             ) : (
               <button
@@ -142,7 +148,6 @@ const Navbar = () => {
               >
                 Login
               </button>
-
             )}
           </li>
         </ul>
